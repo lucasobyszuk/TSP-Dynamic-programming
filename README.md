@@ -13,3 +13,4 @@ Under GNU/Linux with
 
 The only difference in the Windows version and the Linux version are the "include" code lines and the line to set the icon (file .ico).
 This is so for having compiled each version with different framework versions. 
+The majority of the code is written in Spanish because this software was used as practical work in an Argentine university.
