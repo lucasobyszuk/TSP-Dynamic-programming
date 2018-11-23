@@ -1,0 +1,54 @@
+El proyecto fue creado en Windows con
+- Qt 5.1.0
+- Qt Creator 2.8.0
+- Compilador MinGW 4.8 32 bits
+
+Y en Linux con
+- Qt 4.8.5
+- Qt Creator 2.8.0
+- Compilador GCC 4.8.1
+
+
+Notas
+-------------------------------------------------------------------------------------
+
++ En el zip del programa compilado para Windows ( TSP_windows.zip ) se 
+encontrarán varias dll's. Posiblemente para su version de Windows, existan
+varias entre ellas las cuales no son necesarias, sin embargo todas son 
+necesarias para asegurar el correcto funcionamiento del software en todas
+las versiones del SO.
+
+
+
++ En la version del software para Linux, no encontrará más archivos que 
+el ejecutable y un .ico , al tratar de abrir el ejecutable en Linux 
+posiblemente el software no se ejecute ya que tal vez no cuente con los
+suficientes permisos para realizar la ejecución. La solución es
+
+1- Desde el símbolo del sistema ( consola ) tipear lo siguiente
+
+	/directorio/al/ejecutable/TSP_Linux
+
+Si te encuentras en la misma carpeta que el ejecutable entonces
+lo que deberás tipear será
+
+	./TSP_Linux
+
+2- Luego ingresar el comando "chmod ugo+x" sin comillas, y listo, eso le 
+dará al ejecutable los mayores permisos administrativos.
+
+Otra forma es primero tipear el directorio del ejecutable, sin poner el
+nombre del ejecutable en cuestion. Y una vez ubicados en su carpeta, 
+ponemos "chmod -x TSP_Linux" sin comillas, y listo.
+
+
+
++ Podrá notar que hay dos versiones de código fuente, una para Windows y
+otra para Linux, bueno esto se debe a dos motivos:
+Primero ya que ambas versiones fueron compiladas con distintas versiones
+del framework Qt, en sustancia de código nos cambian los directorios #include.
+Segundo que para levantar el icono del programa en cada SO, la linea de codigo
+correspondiente a ello, cambia de un SO al otro.
+
+-------------------------------------------------------------------------------------
+
